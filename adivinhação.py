@@ -4,7 +4,7 @@ print("======= Bem vindo ao jogo de adivinhação! =======")
     
 
 #var
-numerosecreto = random.randrange(1,101) #randomiza o valor da var e o * impoe o limite máximo
+numerosecreto = random.randrange(1,101) 
 total_de_tentativas = 0
 rodada = 1
 pontos = 1000
@@ -24,8 +24,8 @@ else:
 
 
 for rodada in range (1, total_de_tentativas + 1):   #limite do número de tentativas
-    print("Tentativa {} de {}".format(rodada, total_de_tentativas))     #aparece pro usuário o numero de tentativas
-    chute = int(input("Digite um número de 1 a 100: "))    #usuário digitará aqui para ficar salvo na var chute int
+    print("Tentativa {} de {}".format(rodada, total_de_tentativas))     
+    chute = int(input("Digite um número de 1 a 100: "))   
     print("Você digitou: ", chute)
         #converte uma str para o int (números inteiros)
     
@@ -55,7 +55,7 @@ for rodada in range (1, total_de_tentativas + 1):   #limite do número de tentat
         print ("pontos: ", pontos)
 
 
-    rodada = rodada + 1     #para o número de rodadas aumentar a cada loop
+    rodada = rodada + 1     # o número de rodadas aumenta a cada loop
 
 
 print("Fim do jogo, o número era: ", numerosecreto)
